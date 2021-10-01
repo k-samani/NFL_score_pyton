@@ -1,5 +1,4 @@
 import json
-from collections import defaultdict
 import requests
 import itertools
 
@@ -11,12 +10,6 @@ def Get_Source(link):
         f.close()
     
     return
-
-
-
-def Convert(string):
-    li = list(string.split(","))
-    return li
 
 
 Get_Source('https://www.espn.com/nfl/scoreboard')
